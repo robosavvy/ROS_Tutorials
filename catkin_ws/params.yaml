@@ -1,0 +1,12 @@
+background_b: 250
+background_g: 200
+background_r: 0
+rosdistro: 'kinetic
+
+  '
+roslaunch:
+  uris: {host_miguel__39347: 'http://miguel:39347/'}
+rosversion: '1.12.14
+
+  '
+run_id: 9185b3b6-c32a-11e9-b24b-f4d108ce58f1
