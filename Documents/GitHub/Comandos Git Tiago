@@ -1,0 +1,79 @@
+Git usage
+========
+The following is a list of useful git commands :
+- clone a repository
+```
+    git clone remote_url
+```
+- update and merge repository :
+```
+    git pull remote_name branch_name
+```
+- put your code into the repository :
+```
+    git push remote_name branch_name
+```
+- only update repository but don't merge :
+```
+    git fetch remote_name
+```
+- See available remotes
+```
+    git remote -v
+```
+- Check latest commits :
+```
+    git log
+```
+- Change between existing branches :
+```
+    git checkout branch_name
+```
+- Create a new branch :
+```
+    git checkout -b branch_name
+```
+- Inline commit :
+```
+    git commit -m 'commit message'
+```
+- Add a remote :
+```
+    git remote add remote_name remote_url
+```
+- Remove a remote :
+```
+    git remote remove remote_name
+```
+- Rename a remote :
+```
+    git remote rename remote_to_rename new_remote_name
+```
+- Commit as a different user as the one specified in ~/.gitconfig : 
+```
+    git -c user.email=email@domain.com -c user.name='Your Name' commit (...)
+```
+or
+```
+    git commit --author="Name <email>" -m "commit msg"
+```
+- Delete a branch locally :
+```
+    git branch -D branch_name
+```
+- Delete a branch in the remote :
+```
+    git push remote_name --delete branch_name_to_be_deleted
+```
+- Edit latest commit message :
+```
+    git commit --amend
+```
+- Unstage (undo) last local commit
+```
+git reset --soft HEAD^
+```
+- check last n commits
+```
+git diff HEAD~n kinetic
+```
