@@ -8,15 +8,13 @@ find_package(catkin REQUIRED COMPONENTS
   turtlesim
 )
 
-
 catkin_package(
 
 )
-
-add_executable(turtle_tf_listener_debug src/turtle_tf_listener_debug.cpp)
-target_link_libraries(turtle_tf_listener_debug ${catkin_LIBRARIES})
 
 include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
+add_executable(turtle_tf_listener_debug src/turtle_tf_listener_debug.cpp)
+target_link_libraries(turtle_tf_listener_debug ${catkin_LIBRARIES})
