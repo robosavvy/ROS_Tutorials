@@ -19,14 +19,18 @@ Tutorials for TF in: http://wiki.ros.org/tf/Tutorials. For doing the tutorials y
 
 Note 1: If you did just the python tutorials, the tutorial called **Debugging tf problems** is not very complete. Since you will be working with c++ file and you have to add:
   - Code into the bottom of CMakeLists.txt to allow the c++ file compilation
+  		```
   		add_executable(turtle_tf_listener_debug src/turtle_tf_listener_debug.cpp)
 		target_link_libraries(turtle_tf_listener_debug ${catkin_LIBRARIES})
+		```
   - Create a new lanch file called start_debug_demo.launch to call python and c++ files.
 
  Note 2: The package **geometry_tutorial** was cloned from https://github.com/ros/geometry_tutorials, since this package is used in the tutorial **Using Stamped datatypes with tf:: MessageFilter** and the default package was corrupt and missing files.
 
 Note 3: For the tutorial **Using urdf with robot_state_publisher** is necessary to install the robot_state_publisher package though: 
+        ```
         sudo apt-get install ros-kinetic-robot-state-publisher
+        ```
 Further, in the rviz the fixed referential is the Odom referential.
 
 ## Configuring and Using the Navigation Stack
@@ -47,6 +51,13 @@ Note 1: In this tutorial, the robot fourth joint limit is -0.0698 rad and not 0,
 
 Firts you must cheack what is the correct Gazebo version for the your ROS distribution: http://gazebosim.org/tutorials/?tut=ros_wrapper_versionsThe. Gazebo Tutorial is in: http://gazebosim.org/tutorials?cat=connect_ros. All the files from these tutorials are in the case **Gazebo Tutorials**. 
 
-Note 1: In the tutorial **Intermediate: Control plugin** to install Gazebo headers you must see your version of Gazebo for doing **sudo apt install libgazebo8-dev** and replace the 8 for the number of your Gazebo version. For killing the Gazebo server use the command **killall gzserver**. Further in the file **velodyne.world** put <plugin name="velodyne_control" filename="./libvelodyne_plugin.so"/> instead of <plugin name="velodyne_control" filename="libvelodyne_plugin.so"/>.
+Note 1: In the tutorial **Intermediate: Control plugin** to install Gazebo headers you must see your version of Gazebo for doing **sudo apt install libgazebo8-dev** and replace the 8 for the number of your Gazebo version. For killing the Gazebo server use the command **killall gzserver**. Further in the file **velodyne.world** put:
+		```
+		<plugin name="velodyne_control" filename="./libvelodyne_plugin.so"/> 
+		```
+		instead of 
+		```
+		<plugin name="velodyne_control" filename="libvelodyne_plugin.so"/>.
+		```
 
 Note 2: The Advanced tutorials are only advisable if you want to contribute to Gazebo development.
