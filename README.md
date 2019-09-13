@@ -15,7 +15,7 @@ Note 1: Every tutorial, from Beginner and Intermediate Level, are working fine a
 
 ## TF Tutorials
 
-Tutorials for TF in are in [TF Tutorials](http://wiki.ros.org/tf/Tutorials). For doing the tutorials you can choose from python or c++ languages. For a better understanding, you can also do the tutorials twice for both languages. In this package, I did just for python language. All the files from these tutorials are in the case **TF Tutorials**. 
+Tutorials for TF are in [TF Tutorials](http://wiki.ros.org/tf/Tutorials). For doing the tutorials you can choose from python or c++ languages. For a better understanding, you can also do the tutorials twice for both languages. In this package, I did just for python language. All the files from these tutorials are in the case **TF Tutorials**. 
 
 Note 1: If you, just, did the python tutorials, the tutorial called [Debugging tf problems](http://wiki.ros.org/tf/Tutorials/Debugging%20tf%20problems) is not very complete. Since you will be working with c++ files you have:
   - To add 2 lines of code into the bottom of CMakeLists.txt to allow the c++ file compilation
