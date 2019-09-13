@@ -57,4 +57,4 @@ Note 2: The Advanced tutorials are only advisable if you want to contribute to G
 
 Note 3: In the tutorial [Tutorial: Using a URDF in Gazebo](http://gazebosim.org/tutorials?tut=ros_urdf&cat=connect_ros) the package joint_state_publisher was missing from the ROS system and for that reason was cloned from the [joint_state_publisher repository](https://github.com/ros/joint_state_publisher).
 
-**FINAL NOTE:** All the tutorials are good and easy to understand but some have bugs, and for that reason It is necessary to be careful when doing the tutorials.
+**FINAL NOTES:** All the tutorials are good and easy to understand but some have bugs, and for that reason It is necessary to be careful when doing the tutorials. To compile this repository you must clone this to the src case inside your catkin workspace.
